@@ -1,0 +1,112 @@
+:root {
+    --warna-utama: #00b894;
+    --warna-hover: #00a180;
+    --warna-bg-hero: #e3fdf5;
+    --warna-teks: #2d3436;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: var(--warna-teks);
+    overflow-x: hidden;
+}
+
+.bg-primary {
+    background-color: var(--warna-utama) !important;
+}
+
+.text-primary {
+    color: var(--warna-utama) !important;
+}
+
+.btn-primary {
+    background-color: var(--warna-utama) !important;
+    border-color: var(--warna-utama) !important;
+    box-shadow: 0 4px 6px rgba(0, 184, 148, 0.2); /* Efek bayangan hijau halus */
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--warna-hover) !important;
+    border-color: var(--warna-hover) !important;
+    transform: translateY(-2px);
+}
+
+/* --- NAVBAR STYLE --- */
+.navbar {
+    background-color: #ffffff !important;
+    padding: 15px 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+/* Warna link menu (Beranda, Tentang) */
+.navbar-light .navbar-nav .nav-link {
+    color: #555 !important; 
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+/* Efek saat menu disorot (hover) atau sedang aktif */
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--warna-utama) !important;
+}
+
+/* Logo Brand */
+.navbar-brand {
+    font-size: 1.4rem;
+    color: var(--warna-utama) !important;
+}
+
+/* --- HERO SECTION--- */
+.hero-section {
+    min-height: 100vh; /* Tinggi full layar */
+    background: linear-gradient(135deg, var(--warna-bg-hero) 0%, #ffffff 100%);
+    padding-top: 100px; /* Memberi jarak karena ada navbar fixed */
+    padding-bottom: 50px;
+}
+
+.hero-section h1 {
+    color: var(--warna-teks);
+    font-weight: 800;
+}
+
+.hero-section p {
+    color: #636e72;
+    font-size: 1.1rem;
+}
+
+/* Tombol "Tulis Aduan" */
+.btn-warning {
+    color: #2d3436;
+    background-color: #ffda79;
+    border: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.btn-warning:hover {
+    background-color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/* --- KARTU / CARD STYLE --- */
+.card {
+    border: none; /* Hilangkan garis pinggir standar */
+    border-radius: 12px; /* Sudut membulat */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek saat kartu disorot mouse */
+.card:hover {
+    transform: translateY(-5px); /* Naik ke atas */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important; /* Bayangan lebih nyata */
+}
+
+/* Ikon besar di dalam kartu (Dashboard) */
+.display-4 {
+    font-size: 3.5rem;
+}
